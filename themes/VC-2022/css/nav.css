@@ -1,0 +1,239 @@
+#navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px 30px;
+}
+
+
+
+#menuMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#logo,
+.overlayLogo {
+    width: 120px;
+    height: auto;
+
+}
+
+#openBtn {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.2rem;
+}
+
+.overlay {
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+
+    background-color: var(--accentColourGreen);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.overlay a {
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    font-size: var(--navSize);
+}
+
+#closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.overlayLogo {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+
+#mainMenu {
+    margin: 0 10%;
+    border: var(--thickline);
+    border-radius: var(--roundedEdges);
+    text-align: center;
+}
+
+
+.lined {
+    padding: 1rem;
+    border-bottom: var(--thickline);
+}
+
+.lined.last {
+    border: none;
+}
+
+.search-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+#searchIcon {
+    width: 50px;
+    height: 50px;
+}
+
+.search-container input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 60vw;
+    height: 50px;
+    font-size: var(--navSize);
+    color: var(--textDark);
+    opacity: 1;
+
+}
+
+.search-container button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+#overlayFooter {
+    padding: 5% 10%;
+    display: flex;
+    gap: 10px;
+}
+
+
+.footerSide {
+    display: none;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-device-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-device-width: 768px) {
+
+
+    nav {
+        margin: 5% 10%;
+    }
+
+    .search-container input {
+        width: 70vw;
+    }
+
+    #closeBtn {
+        right: 10%;
+        top: 5%;
+    }
+
+    .overlayLogo {
+        top: 5%;
+        left: 10%;
+    }
+
+
+    #overlayFooter {
+
+        gap: 30px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-device-width: 992px) {
+    .body {
+        display: flex;
+        gap: 20px;
+    }
+
+    #logo,
+    .overlayLogo {
+        width: 200px;
+
+    }
+
+    nav {
+        margin: 0;
+    }
+
+
+    #navHeader {
+        /* top: 0;
+        right: 0; */
+        justify-content: center;
+        align-items: center;
+        padding: 3% 0 10% 0;
+        /* position: fixed;
+        width: 15vw;
+        height: 15vh; */
+        /* margin-left: 1%; */
+        /* background-color: var(--bkgColour); */
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0);
+        /* top: 20vh; */
+        width: 18vw;
+        /* height: 100vh; */
+        display: block;
+        /* margin: 10px; */
+        position: relative;
+        overflow: visible;
+
+    }
+
+    .overlay,
+    .overlay a {
+        transition: 0s;
+        font-size: 1rem;
+    }
+
+
+    #overlayFooter,
+    #openBtn,
+    #closeBtn,
+    .overlayLogo {
+        display: none;
+    }
+
+    #menuMobile {
+        justify-content: flex-start;
+
+    }
+
+    .search-container input {
+        width: 8vw;
+        /* background-color: red; */
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    #searchIcon {
+        width: 30px;
+        height: auto;
+    }
+
+    .footerSide {
+        display: block;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-device-width: 1200px) {}

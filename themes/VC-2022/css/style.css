@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--bkgColour);
+    padding: 1rem;
+    font-family: var(--bodyFont);
+}
+
+a:link,
+a:visited {
+    color: var(--bodyFont);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hover.green:hover {
+    background-color: var(--accentColourGreen);
+}
+
+.hover.yellow:hover {
+    background-color: var(--accentColourYellow);
+}
+
+
+.hover.pink:hover {
+    background-color: var(--accentColourPink);
+}
+
+.hover.aqua:hover {
+    background-color: var(--accentColourAqua);
+}
+
+.hover.blue:hover {
+    background-color: var(--accentColourBlue);
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-device-width: 1900px) {
+
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

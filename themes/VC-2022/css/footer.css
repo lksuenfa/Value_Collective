@@ -1,0 +1,192 @@
+.footerSub {
+  padding: 10% 0;
+}
+
+.frame {
+  border: var(--thickline);
+  border-radius: var(--roundedEdges);
+  padding: 5%;
+}
+
+.bold {
+  font-size: 1.2rem;
+  font-family: var(--titleFont);
+  font-weight: 600;
+}
+
+#newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#newsletter form {
+  display: flex;
+  gap: 5px;
+}
+
+#newsletter img {
+  width: 50px;
+  height: auto;
+  padding: 3% 0;
+}
+
+#newsletter input {
+  background-color: rgba(0, 0, 0, 0);
+  border: var(--thinline);
+  border-radius: var(--roundedEdges);
+  width: 50vw;
+  padding: 2%;
+}
+
+#newsletter button {
+  width: 20vw;
+  background-color: var(--textDark);
+  border: var(--thinline);
+  border-radius: var(--roundedEdges);
+  padding: 2%;
+  color: var(--bkgColour);
+}
+
+#newsletter button:hover {
+  background-color: var(--accentColourGreen);
+  border: none;
+}
+
+#contact {
+  text-align: left;
+  padding: 0 5%;
+}
+
+#contact img {
+  width: 15px;
+  height: auto;
+}
+
+#contact h3 {
+  padding: 5% 0;
+}
+
+.contactMethod {
+  padding: 2% 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#contact a:link,
+#contact a:visited {
+  text-decoration: underline;
+}
+
+#contact a:hover {
+  background-color: var(--accentColourPink);
+}
+
+.locationTitle {
+  display: flex;
+  gap: 20px;
+  padding: 5%;
+}
+
+.addressWrapper {
+  text-align: left;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-device-width: 768px) {
+
+  .footerSub,
+  #contact h3 {
+    padding: 2% 0;
+  }
+
+  .contactMethod,
+  .locationTitle {
+    padding: 1% 5%;
+  }
+
+  .addressWrapper {
+    padding: 0 5% 2% 5%;
+    justify-content: flex-start;
+  }
+
+  .frame {
+    margin: 0 10%;
+  }
+
+  #newsletter input {
+    width: 30vw;
+  }
+
+  #newsletter button {
+    width: 10vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-device-width: 992px) {
+  .footerNav {
+    display: none;
+  }
+
+  #footer,
+  #mainMenu {
+    margin: 5%;
+    border: var(--thickline);
+    width: 96%;
+  }
+
+  .overlay {
+    height: auto;
+  }
+
+  #newsletter input {
+    width: 8vw;
+    height: 1.5rem;
+  }
+
+  #newsletter button {
+    font-size: 0.6rem;
+    width: 4vw;
+    cursor: pointer;
+  }
+
+  .contactMethod {
+    padding: 5% 0;
+    gap: 10px;
+  }
+
+  .contactMethod a {
+    font-size: 0.7rem;
+  }
+
+  #contact img {
+    width: 10px;
+    height: auto;
+  }
+
+  #contact {
+    padding: 5% 1%;
+  }
+
+  .locationTitle img {
+    width: 20px;
+    height: auto;
+  }
+
+  .addressWrapper {
+    flex-direction: column;
+  }
+
+  .addressWrapper img {
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+  }
+}

@@ -1,0 +1,430 @@
+.outer-box-frame {
+  border: 4px solid black;
+  border-radius: 7px;
+  margin: 6px auto;
+  /*the auto for the left/right keeps the page centered*/
+  padding: 10px;
+  max-width: 70rem;
+  /* // min-width - 2(padding + border) */
+  justify-content: center;
+  text-align: center;
+}
+
+.outer-box-frame p {
+  font-family: 'Poppins';
+  font-size: 18px;
+  padding: 0 2% 5% 2%;
+  text-align: left;
+}
+
+/* TIMELINE License
+
+ The MIT License (MIT)
+
+Copyright (c) 2022 Paul Barker (https://codepen.io/paulhbarker/pen/apvGdv)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE. */
+@media (min-device-width: 1000px) {
+
+  #timeline .demo-card:nth-child(even) .head::after,
+  #timeline .demo-card:nth-child(odd) .head::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::before,
+  #timeline .demo-card:nth-child(odd) .head::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+  }
+}
+
+/* Some Cool Stuff */
+.demo-card:nth-child(1) {
+  order: 1;
+}
+
+
+.demo-card:nth-child(3) {
+  order: 2;
+}
+
+.demo-card:nth-child(5) {
+  order: 3;
+}
+
+.demo-card:nth-child(7) {
+  order: 4;
+}
+
+.demo-card:nth-child(2) {
+  order: 5;
+}
+
+
+.demo-card:nth-child(4) {
+  order: 6;
+}
+
+.demo-card:nth-child(6) {
+  order: 7;
+}
+
+.demo-card:nth-child(8) {
+  order: 8;
+}
+
+
+
+#timeline .demo-card-wrapper {
+  position: relative;
+  margin: auto;
+}
+
+@media (min-device-width: 1000px) {
+  #timeline .demo-card-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    height: 2100px;
+    margin: auto;
+
+  }
+}
+
+#timeline .demo-card-wrapper::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 4px solid black;
+  border-radius: 7px;
+}
+
+#timeline .demo-card {
+  position: relative;
+  display: block;
+  margin: 10px auto 80px;
+  max-width: 90%;
+  z-index: 2;
+}
+
+@media (min-device-width: 480px) {
+  #timeline .demo-card {
+    max-width: 60%;
+    box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+  }
+}
+
+@media (min-device-width: 720px) {
+  #timeline .demo-card {
+    max-width: 40%;
+  }
+}
+
+@media (min-device-width: 1000px) {
+  #timeline .demo-card {
+    /* max-width: 400px; */
+    height: 400px;
+    /* margin: 50px; */
+    /* margin-top: 45px;
+    margin-bottom: 45px; */
+
+    margin: 30px 50px;
+  }
+
+  #timeline .demo-card:nth-child(odd) {
+    margin-right: 45px;
+  }
+
+  #timeline .demo-card:nth-child(odd) .head::after {
+    border-left-width: 15px;
+    border-left-style: solid;
+    left: 100%;
+  }
+
+  #timeline .demo-card:nth-child(odd) .head::before {
+    left: 491.5px;
+  }
+
+  #timeline .demo-card:nth-child(even) {
+    margin-left: 45px;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::after {
+    border-right-width: 15px;
+    border-right-style: solid;
+    right: 100%;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::before {
+    right: 489.5px;
+  }
+
+  #timeline .demo-card:nth-child(2) {
+    margin-top: 180px;
+  }
+}
+
+#timeline .demo-card .head {
+  position: relative;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  /* color: #fff; */
+  font-weight: 600;
+  font-family: 'Poppins';
+  border: solid black;
+  border-style: dotted;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+
+}
+
+#timeline .demo-card .head .number-box {
+  display: inline;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.17);
+}
+
+#timeline .demo-card .head h2 {
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-size: 1rem;
+  font-weight: inherit;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+@media (min-device-width: 480px) {
+  #timeline .demo-card .head h2 {
+    font-size: 135%;
+    line-height: 1.2rem;
+  }
+}
+
+#timeline .demo-card .head h2 span {
+  display: block;
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+@media (min-device-width: 480px) {
+  #timeline .demo-card .head h2 span {
+    font-size: 0.8rem;
+  }
+}
+
+#timeline .demo-card .timelineBody {
+  border: 2px solid black;
+  border-style: dotted;
+  border-top: 0;
+  padding: 15px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+@media (min-device-width: 1000px) {
+  #timeline .demo-card .timelineBody {
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#timeline .demo-card .timelineBody p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+#timeline .demo-card .timelineBody img {
+
+  width: 300px;
+  height: 200px;
+
+}
+
+#timeline .demo-card--step1,
+#timeline .demo-card--step2,
+#timeline .demo-card--step3,
+#timeline .demo-card--step4,
+#timeline .demo-card--step5,
+#timeline .demo-card--step6,
+#timeline .demo-card--step7,
+#timeline .demo-card--step8 {
+  background-color: #EFEEE4;
+}
+
+#timeline .demo-card--step1:hover {
+  background-color: #B3FF11;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step1 .head::after {
+  border-color: #46b8e9;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step2:hover {
+  background-color: #00E0FF;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step2 .head::after {
+  border-color: #3ee9d1;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step3:hover {
+  background-color: #FA00FF;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step3 .head::after {
+  border-color: #ce43eb;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step4:hover {
+  background-color: #FFF500;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step4 .head::after {
+  border-color: #4d92eb;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step5:hover {
+  background-color: #B3FF11;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step5 .head::after {
+  border-color: #3ee9d1;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step6:hover {
+  background-color: #00E0FF;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step6 .head::after {
+  border-color: #46b8e9;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step7:hover {
+  background-color: #FA00FF;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step7 .head::after {
+  border-color: #46b8e9;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step8:hover {
+  background-color: #FFF500;
+  border-radius: 7px;
+}
+
+#timeline .demo-card--step8 .head::after {
+  border-color: #46b8e9;
+  border-radius: 7px;
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-device-width: 992px) {
+  #aboutpage {
+    border: 4px solid black;
+    border-radius: 7px;
+    margin: 6px auto;
+    /*the auto for the left/right keeps the page centered*/
+    padding: 2%;
+    max-width: 70rem;
+    /* // min-width - 2(padding + border) */
+    justify-content: center;
+    text-align: left;
+  }
+
+  #aboutpage h1,
+  #timeline h1 {
+    margin: 20px;
+  }
+
+  #aboutpage img {
+    width: 40%;
+  }
+
+  #timeline p {
+    text-align: left;
+  }
+
+  #timeline h2 {
+    text-align: center;
+  }
+
+  #timeline .demo-card-wrapper::after {
+    border-left: 4px solid black;
+    border-radius: 7px;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::after,
+  #timeline .demo-card:nth-child(odd) .head::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+
+  #timeline .demo-card .head h2 {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-size: 4rem;
+    font-weight: inherit;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+}
+
+@media (min-device-width: 480px) {
+  #timeline .demo-card .head h2 {
+    font-size: 205%;
+    line-height: 2rem;
+  }
+}

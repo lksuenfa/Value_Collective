@@ -1,0 +1,29 @@
+/* library */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* typeface links */
+
+
+
+:root {
+    --bkgColour: #EFEEE4;
+    --textDark: #343434;
+    --accentColourGreen: #68B178;
+    --accentColourYellow: #EADA70;
+    --accentColourPink: #D6458C;
+    --accentColourSalmon: #d98283;
+    --accentColourBlue: #0037FF;
+    --accentColourLightBlue: #30B2D0;
+    --accentColourAqua: #00E0FF;
+    --accentColourPurple: #B197B3;
+
+    /* fonts */
+    --bodyFont: 'Public Sans', sans-serif;
+    --titleFont: 'Poppins', sans-serif;
+    --navSize: 1.5rem;
+
+    /* lines */
+    --thickline: 3px solid var(--textDark);
+    --thinline: 2px solid var(--textDark);
+    --roundedEdges: 7px;
+}

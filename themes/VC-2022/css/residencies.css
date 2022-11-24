@@ -1,0 +1,81 @@
+/* product grid  in project.css*/
+#past-residents {
+    border: var(--thickline);
+    border-radius: var(--roundedEdges);
+    padding: 2% 5%;
+    margin-bottom: 5%;
+}
+
+#current-residents h2,
+#past-residents h2 {
+    padding: 5% 0;
+}
+
+.product-grid.residents {
+    margin-bottom: 5%;
+}
+
+.grid-description.residents {
+    padding-bottom: 3%;
+}
+
+.resident-link {
+    font-style: italic;
+}
+
+.past-residents ul {
+    display: block;
+    padding-bottom: 5%;
+    list-style-type: none;
+
+}
+
+@media only screen and (min-device-width: 768px) {
+
+    #current-residents h2 {
+        padding: 5% 10% 0 10%;
+    }
+
+    #past-residents {
+        border: var(--thickline);
+        border-radius: var(--roundedEdges);
+        padding: 2%;
+        margin: 2% 10%;
+    }
+
+    #past-residents h2 {
+        padding: 2% 0;
+    }
+
+
+
+
+    .product-grid.residents {
+        margin-bottom: 0%;
+    }
+
+    .past-residents ul {
+
+        column-count: 3;
+        column-gap: 20px;
+        padding-bottom: 0%;
+    }
+}
+
+@media only screen and (min-device-width: 992px) {
+    #current-residents h2 {
+        padding: 2% 3% 0% 0;
+    }
+
+    #past-residents {
+        border: var(--thickline);
+        border-radius: var(--roundedEdges);
+        padding: 2%;
+        margin: 2% 3% 2% 0%;
+    }
+
+    #past-residents h2 {
+        padding: 0% 0 1% 0;
+    }
+
+}
