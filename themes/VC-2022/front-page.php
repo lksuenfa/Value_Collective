@@ -1,9 +1,5 @@
 <?php get_header() ?>
 
-
-
-
-
 <div id="frontpage" class="outer-box-frame shapes">
 
     <!-- mission statement -->
@@ -20,9 +16,10 @@
     while ($mission->have_posts()) {
         $mission->the_post();
     ?>
-        <h1> <?php the_content(); ?></h1>
 
-
+        <div class="missionStat">
+            <?php the_content(); ?>
+        </div>
 
     <?php } ?>
 

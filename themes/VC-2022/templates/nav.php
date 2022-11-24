@@ -31,7 +31,7 @@
 
               </div>
 
-              <a class="lined hover green" href="<?php echo site_url('/about');  ?>">About</a>
+              <a class="lined hover green" href="<?php echo get_post_type_archive_link('timeline'); ?>">About</a>
               <a class="lined hover pink" href="<?php echo get_post_type_archive_link('residents'); ?>">Residencies</a>
               <a class="lined hover yellow" href="<?php echo get_post_type_archive_link('project'); ?>">Projects</a>
               <a class="lined last hover aqua" href="<?php echo get_post_type_archive_link('document'); ?>">Document</a>

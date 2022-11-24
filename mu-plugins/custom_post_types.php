@@ -70,9 +70,26 @@ function post_types()
             'name' => 'Documents',
             'all_items' => 'All documents',
             'edit_item' => 'Edit document',
-            'not_found' => 'No documentfound',
+            'not_found' => 'No document found',
             'singular_name' => 'Document'
         ),
         'menu_icon' => 'dashicons-media-document',
+    ));
+
+
+    register_post_type('timeline', array(
+        'supports' => array('title', 'editor', 'thumbnail',  'page-attributes'),
+        'rewrite' => array('slug => timeline'),
+        'show_in_rest' => true,
+        'public' => true,
+        'has_archive' => true,
+        'labels' => array(
+            'name' => 'Timeline',
+            'all_items' => 'All timeline',
+            'edit_item' => 'Edit timeline',
+            'not_found' => 'No timeline found',
+            'singular_name' => 'Timeline'
+        ),
+        'menu_icon' => 'dashicons-excerpt-view',
     ));
 }

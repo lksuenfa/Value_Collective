@@ -8,10 +8,11 @@ function loadFiles()
   wp_enqueue_style('stylesheet', get_theme_file_uri("/css/stylesheet.css"));
   wp_enqueue_style('style', get_theme_file_uri("/css/style.css"));
   wp_enqueue_style('front-page', get_theme_file_uri("/css/front-page.css"));
-  wp_enqueue_style('nav', get_theme_file_uri("/css/nav.css"));
-  wp_enqueue_style('about', get_theme_file_uri("/css/about.css"));
-  wp_enqueue_style('documents', get_theme_file_uri("/css/documents.css"));
-  wp_enqueue_style('footer', get_theme_file_uri("/css/footer.css"));
+  wp_enqueue_style('navigation', get_theme_file_uri("/css/nav.css"));
+  wp_enqueue_style('about-us', get_theme_file_uri("/css/about.css"));
+  wp_enqueue_style('documentation', get_theme_file_uri("/css/documents.css"));
+  wp_enqueue_style('timeline', get_theme_file_uri("/css/timeline.css"));
+  wp_enqueue_style('footerNav', get_theme_file_uri("/css/footer.css"));
   wp_enqueue_style('project', get_theme_file_uri("/css/project.css"));
   wp_enqueue_style('residencies', get_theme_file_uri("/css/residencies.css"));
 

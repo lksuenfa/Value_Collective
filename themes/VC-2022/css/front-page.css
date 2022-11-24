@@ -28,7 +28,7 @@
   min-height: 76vh;
 }
 
-h1 {
+.missionStat p {
   font-family: var(--titleFont);
   font-style: italic;
   font-size: 35px;
@@ -39,15 +39,10 @@ h1 {
   font-size: 24px;
   font-weight: bolder;
   width: 80vw;
+
 }
 
-#frontpage p {
-  font-size: 18px;
-  font-family: var(--titleFont);
-  font-style: normal;
-  text-align: left;
-  padding: 1%;
-}
+#frontpage p {}
 
 .dropdown2-content img,
 .dropdown-content img {
@@ -81,6 +76,12 @@ h1 {
 .dropdown2-content {
   display: none;
   overflow: auto;
+
+  font-size: 18px;
+  font-family: var(--titleFont);
+  font-style: normal;
+  text-align: left;
+  padding: 1%;
 }
 
 .dropdown-content a,
@@ -393,7 +394,7 @@ SOFTWARE.
     float: left;
   }
 
-  h1 {
+  .missionStat p {
     font-family: var(--titleFont);
     font-style: italic;
     font-size: 45px;
@@ -415,13 +416,7 @@ SOFTWARE.
     width: 40%;
   }
 
-  #frontpage p {
-    font-size: 18px;
-    font-family: var(--titleFont);
-    font-style: normal;
-    margin-top: 10%;
-    text-align: left;
-  }
+
 
   .dropdown,
   .dropdown2 {
@@ -435,6 +430,12 @@ SOFTWARE.
   .dropdown2 {
     background: #EFEEEA;
     width: 70vw;
+
+    font-size: 18px;
+    font-family: var(--titleFont);
+    font-style: normal;
+    margin-top: 2%;
+    text-align: left;
   }
 
   .dropbtn,

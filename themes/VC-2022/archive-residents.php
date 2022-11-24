@@ -29,8 +29,17 @@
     <section class="product-grid projects">
         <div class="grid-wrapper">
 
-            <?php while (have_posts()) {
-                the_post();
+            <?php
+            $currentResidents = new WP_Query(array(
+                'post_per_page' => -1,
+                'post_type' => 'residents',
+                'cat' => 5, //filter for category id 5 = current
+                'orderby' => 'title',
+                'order' => 'ASC'
+            ));
+
+            while ($currentResidents->have_posts()) {
+                $currentResidents->the_post();
             ?>
 
                 <figure class="product modalBtn">
@@ -42,10 +51,7 @@
                         <h4 class="grid-title"><?php the_title(); ?></h4>
 
                         <p class="grid-description">
-                            <?php
-                            if (the_excerpt()) {
-                                echo get_the_excerpt();
-                            }  ?>
+                            <?php the_content(); ?>
                         </p>
                     </figcaption>
                 </figure>
@@ -63,16 +69,23 @@
     <h2>Past Residents</h2>
     <div class="past-residents">
         <ul>
-            <li>member</li>
-            <li>member</li>
-            <li>member</li>
-            <li>member</li>
-            <li>member</li>
-            <li>member</li>
-            <li>member</li>
-            <li>member</li>
-            <li>member</li>
+            <?php
+            $currentResidents = new WP_Query(array(
+                'post_per_page' => -1,
+                'post_type' => 'residents',
+                'cat' => 6, //filter for category id 5 = archive
+                'orderby' => 'title',
+                'order' => 'ASC'
+            ));
 
+            while ($currentResidents->have_posts()) {
+                $currentResidents->the_post();
+            ?>
+                <li><?php the_title(); ?></li>
+
+            <?php
+            };
+            ?>
         </ul>
     </div>
 </section>
