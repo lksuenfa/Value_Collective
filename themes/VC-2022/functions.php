@@ -15,6 +15,8 @@ function loadFiles()
   wp_enqueue_style('footerNav', get_theme_file_uri("/css/footer.css"));
   wp_enqueue_style('project', get_theme_file_uri("/css/project.css"));
   wp_enqueue_style('residencies', get_theme_file_uri("/css/residencies.css"));
+  wp_enqueue_style('slideshow', get_theme_file_uri("/css/slideshow.css"));
+  wp_enqueue_style('events', get_theme_file_uri("/css/events.css"));
 
 
   // load scripts
@@ -35,8 +37,8 @@ function features()
   add_theme_support('post-thumbnails');
 
   // add custom image sizes for cropping
-  add_image_size('team-page', 300, 400, true);
   add_image_size('team-thumbnail', 250, 300, true);
+  add_image_size('front-page', 400, 400, true);
 }
 
 // adjust queries

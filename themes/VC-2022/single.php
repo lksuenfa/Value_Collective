@@ -2,12 +2,18 @@
 get_header();
 ?>
 
-<section class="body">
-    <?php require "templates/nav.php" ?>
 
 
+    <?php
 
-</section>
+    while (have_posts()) {
+        the_post();
+        the_title();
+        the_content();
+    }
+    ?>
+
+
 
 <?
 

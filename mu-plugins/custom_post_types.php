@@ -47,6 +47,7 @@ function post_types()
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
         'rewrite' => array('slug => events'),
         'show_in_rest' => true,
+        'taxonomies' => array('category', 'post_tag'),
         'public' => true,
         'has_archive' => true,
         'labels' => array(
@@ -61,9 +62,10 @@ function post_types()
 
     // protocols turned to document
     register_post_type('document', array(
-        'supports' => array('title', 'editor'),
+        'supports' => array('title', 'editor', 'excerpt', 'thumbnail'),
         'rewrite' => array('slug => documents'),
         'show_in_rest' => true,
+        'taxonomies' => array('category', 'post_tag'),
         'public' => true,
         'has_archive' => true,
         'labels' => array(
@@ -78,7 +80,7 @@ function post_types()
 
 
     register_post_type('timeline', array(
-        'supports' => array('title', 'editor', 'thumbnail',  'page-attributes'),
+        'supports' => array('title', 'editor', 'thumbnail',  'page-attributes', 'excerpt'),
         'rewrite' => array('slug => timeline'),
         'show_in_rest' => true,
         'public' => true,

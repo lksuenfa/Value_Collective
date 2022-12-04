@@ -21,8 +21,7 @@
               <a id="closeBtn" class="close"><img src=<?php echo get_theme_file_uri('/assets/icons/close_icon.svg'); ?> alt="close icon"></a>
           </section>
 
-
-          <div id="mainMenu">
+          <div>
               <div class="search-container lined">
                   <form action="">
                       <input type="text" name="s" value="<?php echo get_search_query(); ?>">
@@ -31,22 +30,23 @@
 
               </div>
 
-              <a class="lined hover green" href="<?php echo get_post_type_archive_link('timeline'); ?>">About</a>
-              <a class="lined hover pink" href="<?php echo get_post_type_archive_link('residents'); ?>">Residencies</a>
-              <a class="lined hover yellow" href="<?php echo get_post_type_archive_link('project'); ?>">Projects</a>
-              <a class="lined last hover aqua" href="<?php echo get_post_type_archive_link('document'); ?>">Document</a>
+              <div id="mainMenu">
+                  <a class="lined hover green" href="<?php echo get_post_type_archive_link('timeline'); ?>">About</a>
+                  <a class="lined hover pink" href="<?php echo get_post_type_archive_link('residents'); ?>">Residencies</a>
+                  <a class="lined hover yellow" href="<?php echo get_post_type_archive_link('project'); ?>">Projects</a>
+                  <a class="lined  hover aqua" href="<?php echo get_post_type_archive_link('document'); ?>">Document</a>
+                  <a class="lined last hover salmon" href="<?php echo get_post_type_archive_link('event'); ?>">Events</a>
+              </div>
           </div>
 
           <div id="overlayFooter">
               <a href=""><img src=<?php echo get_theme_file_uri('/assets/icons/fb.svg'); ?> alt=" facebook logo"></a>
               <a href="mailto: abc@example.com"> <img src=<?php echo get_theme_file_uri('/assets/icons/email.png'); ?> alt="email logo"></a>
           </div>
-
           <section class="footerSide">
-              <?php
-                require  "footerNav.php"
-                ?>
+              <?php require  "footerNav.php" ?>
           </section>
+
       </div>
 
 

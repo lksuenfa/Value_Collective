@@ -26,9 +26,12 @@ a:visited {
     background-color: var(--accentColourYellow);
 }
 
-
 .hover.pink:hover {
     background-color: var(--accentColourPink);
+}
+
+.hover.salmon:hover {
+    background-color: var(--accentColourSalmon);
 }
 
 .hover.aqua:hover {

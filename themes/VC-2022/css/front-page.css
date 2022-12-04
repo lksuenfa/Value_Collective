@@ -114,6 +114,14 @@
   margin-top: 10px;
 }
 
+.frontImg {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* display: inline-block; */
 /* ARROW BUTON */
 /* Copyright (c) 2022 Diana Joanita Nakyazze (https://codepen.io/anitanad/pen/qBWGNKJ)
@@ -390,8 +398,8 @@ SOFTWARE.
   }
 
   .outer-box-frame img {
-    width: 35%;
-    float: left;
+    /* width: 35%;
+    float: left; */
   }
 
   .missionStat p {

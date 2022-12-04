@@ -60,15 +60,15 @@
         </span>
 
         <div class="modal-content-layout">
-
-            <div class="modal-img">
-                <?php the_post_thumbnail('team-thumbnail'); ?>
-            </div>
             <div>
                 <h3 class="thumbnail-title"><?php the_title(); ?></h3>
 
                 <p class="thumbnail-text">
-                    <?php the_content(); ?>
+
+                    <?php
+                    $id = get_the_ID();
+                    echo $id;
+                    the_content(); ?>
                 </p>
             </div>
         </div>
