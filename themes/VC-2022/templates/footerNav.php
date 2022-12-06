@@ -34,6 +34,14 @@
             </address>
         </div>
 
+        <a href="<?php echo get_post_type_archive_link('document'); ?>">
+            <div id="documents">
+                <div class="documentsTitle">
+                    <img src="<?php echo get_theme_file_uri('/assets/icons/documents.svg'); ?>" alt="document icon">
+                    <h3 class="bold">Documents</h3>
+                </div>
+        </a>
+
     </div>
 
 </section>

@@ -7,8 +7,9 @@
 
 body {
     background-color: var(--bkgColour);
-    padding: 1rem;
+    padding: 5%;
     font-family: var(--bodyFont);
+    color: var(--textDark);
 }
 
 a:link,
@@ -40,6 +41,15 @@ a:visited {
 
 .hover.blue:hover {
     background-color: var(--accentColourBlue);
+}
+
+@media only screen and (min-device-width: 992px) {
+    body {
+
+        padding: 1%;
+
+    }
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

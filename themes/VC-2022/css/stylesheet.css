@@ -20,10 +20,12 @@
     /* fonts */
     --bodyFont: 'Public Sans', sans-serif;
     --titleFont: 'Poppins', sans-serif;
-    --navSize: 1.5rem;
+    --navSize: 4rem;
 
     /* lines */
     --thickline: 3px solid var(--textDark);
+    --thickline-mobile: 6px solid var(--textDark);
     --thinline: 2px solid var(--textDark);
     --roundedEdges: 7px;
+    --roundedEdges-mobile: 14px;
 }

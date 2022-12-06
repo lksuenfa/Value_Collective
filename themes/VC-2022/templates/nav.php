@@ -33,19 +33,60 @@
               <div id="mainMenu">
                   <a class="lined hover green" href="<?php echo get_post_type_archive_link('timeline'); ?>">About</a>
                   <a class="lined hover pink" href="<?php echo get_post_type_archive_link('residents'); ?>">Residencies</a>
-                  <a class="lined hover yellow" href="<?php echo get_post_type_archive_link('project'); ?>">Projects</a>
-                  <a class="lined  hover aqua" href="<?php echo get_post_type_archive_link('document'); ?>">Document</a>
-                  <a class="lined last hover salmon" href="<?php echo get_post_type_archive_link('event'); ?>">Events</a>
+                  <a class="lined last hover yellow" href="<?php echo get_post_type_archive_link('project'); ?>">Projects</a>
+
               </div>
+
+
+          </div>
+
+          <div id="eventMenu">
+              <a href="<?php echo get_post_type_archive_link('event'); ?>">
+
+                  <h3 class="eventTitle">Upcoming Events</h3>
+
+                  <?php
+                    $today = date('Ymd');
+
+                    // display upcoming events only
+                    $upcomingEvents = new WP_Query(array(
+                        'posts_per_page' => -1,
+                        'post_type' => 'event',
+                        'meta_key' => 'end_date',
+                        'orderby' => 'meta_value_num',
+                        'order' => 'ASC',
+                        'meta_query' => array(
+                            array(
+                                'key' => 'end_date',
+                                'compare' => '>=',
+                                'value' => $today,
+                                'type' => 'numeric'
+                            )
+                        )
+                    ));
+
+                    while ($upcomingEvents->have_posts()) {
+                        $upcomingEvents->the_post();
+                    ?>
+                      <div class="eventrow">
+                          <h4 class="date"> <?php the_field('date_display'); ?></h4>
+                          <p class="eventname"><?php the_title(); ?> </p>
+                      </div>
+
+                  <?php } ?>
+
+              </a>
           </div>
 
           <div id="overlayFooter">
               <a href=""><img src=<?php echo get_theme_file_uri('/assets/icons/fb.svg'); ?> alt=" facebook logo"></a>
               <a href="mailto: abc@example.com"> <img src=<?php echo get_theme_file_uri('/assets/icons/email.png'); ?> alt="email logo"></a>
+              <a href=""><img src="<?php echo get_theme_file_uri('/assets/icons/newsletter.svg'); ?>" alt="newsletter icon"></a>
           </div>
-          <section class="footerSide">
-              <?php require  "footerNav.php" ?>
-          </section>
+      </div>
+      <section class="footerSide">
+          <?php require  "footerNav.php" ?>
+      </section>
 
       </div>
 

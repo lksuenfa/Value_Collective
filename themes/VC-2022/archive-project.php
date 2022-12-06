@@ -34,7 +34,12 @@
                 </div>
 
                 <figcaption>
-                    <h4 class="grid-title"><?php the_title(); ?></h4>
+                    <h4 class="grid-title">
+                        <?php the_title();
+
+
+                        ?>
+                    </h4>
 
                     <p class="grid-description">
                         <?php
@@ -61,14 +66,15 @@
 
         <div class="modal-content-layout">
             <div>
-                <h3 class="thumbnail-title"><?php the_title(); ?></h3>
+                <h3 class="thumbnail-title"><?php echo the_title(); ?></h3>
 
                 <p class="thumbnail-text">
 
                     <?php
                     $id = get_the_ID();
                     echo $id;
-                    the_content(); ?>
+                    the_content();
+                    ?>
                 </p>
             </div>
         </div>
