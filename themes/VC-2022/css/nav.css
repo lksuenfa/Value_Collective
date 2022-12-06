@@ -98,26 +98,25 @@
  }
 
  .eventTitle:hover {
-     background-color: var(--accentColourBlue);
+     background-color: var(--accentColourSalmon);
  }
 
  .date {
      width: 33%;
-     padding: 0 5px 0 0;
-     float: left;
-     padding-left: 3%;
-     padding-bottom: 3%;
-     padding-top: 2%;
-     font-size: 3rem;
+     font-size: var(--navSize-h2);
+ }
+
+ .eventrow {
+     display: flex;
+     gap: 10px;
+     padding: 2%;
+     align-items: center;
  }
 
  .eventname {
      width: 66%;
-     padding: 0 5px 0 0;
-     float: right;
-     padding-bottom: 3%;
-     padding-top: 2%;
-     font-size: 3rem;
+     font-size: var(--navSize-h2);
+     text-align: left;
 
  }
 
@@ -184,13 +183,34 @@
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-device-width: 768px) {
 
+     #logo,
+     .overlayLogo {
+         width: 20vw;
+     }
 
-     nav {
-         margin: 5% 10%;
+     #closeBtn img {
+         width: 10vw;
+     }
+
+     .date,
+     .eventname {
+         font-size: var(--tabletSize-nav);
+     }
+
+
+
+
+     .overlay a {
+         font-size: var(--tabletSize-nav);
+         padding: 3%;
      }
 
      .search-container input {
          width: 70vw;
+     }
+
+     #openBtn {
+         font-size: 2.5rem;
      }
 
      #closeBtn {

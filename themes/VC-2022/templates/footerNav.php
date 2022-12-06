@@ -3,17 +3,26 @@
     <div id="contact" class="footerSub">
         <h3 class="bold">Get in Touch</h3>
         <div class="contactMethod">
-            <img src=<?php echo get_theme_file_uri('/assets/icons/email.png'); ?> alt="email icon">
+            <div class="imgWide">
+                <img src=<?php echo get_theme_file_uri('/assets/icons/email.png'); ?> alt="email icon">
+            </div>
+
             <a href="mailto: abc@example.com">contact[at]valuecollective.org</a>
         </div>
 
         <div class="contactMethod">
-            <img src=<?php echo get_theme_file_uri('/assets/icons/fb.svg'); ?> alt="facebook icon">
+            <div class="imgWide">
+                <img src=<?php echo get_theme_file_uri('/assets/icons/fb.svg'); ?> alt="facebook icon">
+            </div>
+
             <a href="">Contact Value Collective</a>
         </div>
 
         <div class="contactMethod">
-            <img src="<?php echo get_theme_file_uri('/assets/icons/newsletter.svg'); ?>" alt="newsletter icon">
+            <div class="imgWide">
+                <img src="<?php echo get_theme_file_uri('/assets/icons/newsletter.svg'); ?>" alt="newsletter icon">
+            </div>
+
             <a href="">Join our newsletter</a>
         </div>
     </div>

@@ -43,12 +43,47 @@ a:visited {
     background-color: var(--accentColourBlue);
 }
 
+.frame {
+    border: var(--thickline-mobile);
+    border-radius: var(--roundedEdges-mobile);
+    padding: 5%;
+    margin: 5% 0;
+}
+
+.outer-box-frame {
+    border: 4px solid black;
+    border-radius: 7px;
+    margin: 6px auto;
+    /*the auto for the left/right keeps the page centered*/
+    padding: 10px;
+    max-width: 70rem;
+    /* // min-width - 2(padding + border) */
+    justify-content: center;
+    text-align: center;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-device-width: 768px) {
+    body {
+
+        padding: 2%;
+
+    }
+
+    .frame {
+
+        margin: 2% 0;
+    }
+}
+
 @media only screen and (min-device-width: 992px) {
     body {
 
         padding: 1%;
 
     }
+
+
 
 }
 

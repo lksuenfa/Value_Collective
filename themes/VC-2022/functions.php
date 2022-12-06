@@ -17,6 +17,7 @@ function loadFiles()
   wp_enqueue_style('residencies', get_theme_file_uri("/css/residencies.css"));
   wp_enqueue_style('slideshow', get_theme_file_uri("/css/slideshow.css"));
   wp_enqueue_style('events', get_theme_file_uri("/css/events.css"));
+  wp_enqueue_style('scroll', get_theme_file_uri("/css/scroll-ico.css"));
 
 
   // load scripts

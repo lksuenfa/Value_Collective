@@ -6,11 +6,7 @@
   display: none;
 }
 
-.frame {
-  border: var(--thickline);
-  border-radius: var(--roundedEdges);
-  padding: 5%;
-}
+
 
 .bold {
   font-size: 1.2rem;
@@ -63,12 +59,20 @@
 }
 
 #contact img {
-  width: 15px;
-  height: auto;
+  width: auto;
+  height: 5vw;
+}
+
+.imgWide {
+  width: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact h3 {
   padding: 5% 0;
+  font-size: var(--navSize);
 }
 
 .contactMethod {
@@ -76,6 +80,7 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  font-size: var(--navSize-body);
 }
 
 #contact a:link,
@@ -91,6 +96,18 @@
   display: flex;
   gap: 20px;
   padding: 5%;
+  align-items: center;
+}
+
+.locationTitle img,
+.documentsTitle img {
+  width: auto;
+  height: 7vw;
+}
+
+.locationTitle h3,
+.documentsTitle h3 {
+  font-size: var(--navSize-h2);
 }
 
 .documentsTitle {
@@ -105,7 +122,7 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
-  padding-bottom: 5%;
+  font-size: var(--navSize-h2);
 }
 
 
@@ -125,12 +142,11 @@
 
   .addressWrapper {
     padding: 0 5% 2% 5%;
-    justify-content: flex-start;
+    justify-content: center;
+    font-size: var(--navSize-body);
   }
 
-  .frame {
-    margin: 0 10%;
-  }
+
 
   #newsletter input {
     width: 30vw;
