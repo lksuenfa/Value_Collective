@@ -17,9 +17,9 @@
 
 .product {
 
-    border: var(--thickline);
+    border: var(--thickline-mobile);
     width: 100%;
-    border-radius: 12px;
+    border-radius: var(--roundedEdges-mobile);
     cursor: pointer;
 }
 
@@ -29,7 +29,7 @@
 
 .product img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .product-grid figcaption {
@@ -39,7 +39,14 @@
 .grid-title {
     font-family: var(--titleFont);
     padding-bottom: 5%;
+    font-size: var(--navSize-body);
 }
+
+.grid-description p {
+
+    font-size: 2rem;
+}
+
 
 
 /* 
@@ -102,10 +109,12 @@ https://www.w3schools.com/howto/howto_css_modals.asp
 
 
 @media only screen and (min-device-width: 768px) {
-    .product-grid {
-        margin: 5% 10%;
-    }
 
+
+
+    .product-grid {
+        margin: 2% 0;
+    }
 
     .product {
         flex: 1 46%;
@@ -115,9 +124,22 @@ https://www.w3schools.com/howto/howto_css_modals.asp
     .modal-content-layout {
         padding: 5vh 5% 10% 5%;
     }
+
+    .grid-title,
+    .grid-description p {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-device-width: 992px) {
+
+    .product {
+
+        border: var(--thickline);
+        border-radius: var(--roundedEdges);
+
+    }
+
     .product-grid {
         margin: 2% 3% 10% 0%;
     }

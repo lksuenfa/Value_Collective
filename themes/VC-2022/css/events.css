@@ -44,10 +44,10 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-device-width: 768px) {
 
-    #documentpage2 {
+    /* #documentpage2 {
         margin: 0 10%;
 
-    }
+    } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

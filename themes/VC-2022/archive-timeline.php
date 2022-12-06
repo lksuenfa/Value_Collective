@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="pageDescription">
-    <div id="documentpage2" class="outer-box-frame">
+    <div id="about" class="frame pageHeader">
         <?php
         $args = array(
             'post_type' => 'page',
@@ -21,7 +21,7 @@
 
 
 
-<section id=timeline class="outer-box-frame">
+<section id=timeline class="frame timeline">
 
     <?php
     $count = 1;
@@ -53,8 +53,11 @@
                         </span> <?php the_title(); ?></h2>
                 </div>
                 <div class="timelineBody">
-                    <?php the_content(); ?>
-                    <div>
+                    <div class="timelinebody content">
+                        <?php the_content(); ?>
+                    </div>
+
+                    <div class="timelineImg">
                         <?php the_post_thumbnail(); ?>
                     </div>
 

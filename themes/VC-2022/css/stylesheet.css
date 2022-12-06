@@ -20,10 +20,15 @@
     /* fonts */
     --bodyFont: 'Public Sans', sans-serif;
     --titleFont: 'Poppins', sans-serif;
+
+    /* font size */
     --navSize: 4rem;
     --navSize-h2: 3rem;
     --navSize-body: 2rem;
     --tabletSize-nav: 2.5rem;
+    --bodyMobile-h1: 3rem;
+    --bodyMobile-h2: 2rem;
+
 
     /* lines */
     --thickline: 3px solid var(--textDark);

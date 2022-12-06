@@ -1,41 +1,25 @@
-#documentpage2 {
-  margin: 1%;
-  text-align: left;
-  border: 2px #D98283;
-  border-style: dotted;
+#document-wrapper {
+  display: flex;
+  gap: 5%;
 }
 
-#documentpage2 p {
-  font-size: 16px;
-  text-align: center;
-}
 
-#documentpage2 h1 {
-  margin: 0;
-  text-align: center;
-  font-size: 32px;
-}
 
-#documentpage img {
-  width: 10%;
-  float: left;
-}
+#document-wrapper h1 {
 
-#documentpage h1 {
-  margin-left: 70px;
   margin-top: 0;
-  margin-bottom: 0;
-  font-size: 24px;
+  margin-bottom: 5%;
+  font-size: 2rem;
   text-align: left;
 }
 
-#documentpage p {
+.docTextContainer {
   border-top: 2px dotted black;
-  margin-left: 70px;
+  border-bottom: 2px dotted black;
   margin-top: 0;
   margin-bottom: 0;
   text-align: left;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -43,11 +27,13 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-device-width: 768px) {
-
-  #documentpage2 {
-    margin: 0 10%;
-
+  #document-wrapper h1 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
   }
+
+
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

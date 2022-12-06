@@ -1,7 +1,7 @@
 /* product grid  in project.css*/
 #past-residents {
-    border: var(--thickline);
-    border-radius: var(--roundedEdges);
+    border: var(--thickline-mobile);
+    border-radius: var(--roundedEdges-mobile);
     padding: 2% 5%;
     margin-bottom: 5%;
 }
@@ -30,17 +30,26 @@
 
 }
 
+.past-residents li {
+    font-size: 0.7em;
+}
+
+#past-residents h2 {
+    font-size: 0.8rem;
+}
+
 @media only screen and (min-device-width: 768px) {
 
     #current-residents h2 {
-        padding: 5% 10% 0 10%;
+        padding: 2% 0% 0 0%;
+        font-size: 3rem;
     }
 
     #past-residents {
         border: var(--thickline);
         border-radius: var(--roundedEdges);
         padding: 2%;
-        margin: 2% 10%;
+        /* margin: 2% 10%; */
     }
 
     #past-residents h2 {
@@ -48,6 +57,10 @@
     }
 
 
+    #past-residents h2,
+    .past-residents li {
+        font-size: 1.5rem;
+    }
 
 
     .product-grid.residents {

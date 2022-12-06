@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="pageDescription">
-    <div id="documentpage2" class="outer-box-frame">
+    <div id="documentpage2" class="frame pageHeader">
         <?php
         $args = array(
             'post_type' => 'page',
@@ -24,7 +24,7 @@
 
 <section id="current-residents">
 
-    <h2>Current Residents</h2>
+    <h2>Residents</h2>
 
     <section class="product-grid projects">
         <div class="grid-wrapper">
@@ -50,9 +50,9 @@
                     <figcaption>
                         <h4 class="grid-title"><?php the_title(); ?></h4>
 
-                        <p class="grid-description">
+                        <div class="grid-description">
                             <?php the_content(); ?>
-                        </p>
+                        </div>
                     </figcaption>
                 </figure>
 
