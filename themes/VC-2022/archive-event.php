@@ -2,7 +2,7 @@
 
 <section>
 
-    <div id="documentpage2" class="outer-box-frame">
+    <div class="frame pageHeader">
 
         <?php
         $args = array(
@@ -46,19 +46,26 @@
         while ($upcomingEvents->have_posts()) {
             $upcomingEvents->the_post();
         ?>
-            <div id="eventpage" class="outer-box-frame">
+            <div class="frame eventpage">
+                <div class="lined eventTitlePage">
+                    <h1><?php the_title(); ?></h1>
+                    <h3>
+                        <?php the_field('date_display');
+                        echo "<br>";
+                        the_field('event_location');
+                        ?>
 
-                <?php the_post_thumbnail(); ?>
-                <h1><?php the_title(); ?></h1>
-                <h3>
-                    <?php the_field('date_display');
-                    echo "<br>";
-                    the_field('event_location');
-                    ?>
+                    </h3>
+                </div>
+                <div class="eventContent">
+                    <div class="eventDes">
+                        <?php the_content(); ?>
+                    </div>
 
-                </h3>
-
-                <?php the_content(); ?>
+                    <div class="eventImg">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                </div>
 
             </div>
 
@@ -69,7 +76,7 @@
 
 
     <section>
-        <h3>Past Events</h3>
+        <h3 id="pastEventsTitle"> Past Events</h3>
 
 
         <?php
@@ -96,22 +103,27 @@
             $pastEvents->the_post();
         ?>
 
-            <div id="eventpage" class="outer-box-frame">
+            <div class="frame eventpage">
+                <div class="lined eventTitlePage">
+                    <h1><?php the_title(); ?></h1>
+                    <h3>
+                        <?php the_field('date_display');
+                        echo "<br>";
+                        the_field('event_location');
+                        ?>
 
-                <div>
-                    <?php the_post_thumbnail(); ?>
+                    </h3>
                 </div>
 
-                <h1><?php the_title(); ?></h1>
-                <h3>
-                    <?php the_field('date_display');
-                    echo "<br>";
-                    the_field('event_location');
-                    ?>
+                <div class="eventContent">
+                    <div class="eventDes">
+                        <?php the_content(); ?>
+                    </div>
 
-                </h3>
-
-                <?php the_content(); ?>
+                    <div class="eventImg">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                </div>
 
             </div>
 

@@ -1,98 +1,100 @@
-#eventpage2 {
-    margin: 1%;
-    text-align: left;
-    border: 2px #D98283;
-    border-style: dotted;
-}
-
-#eventpage2 p {
-    font-size: 16px;
-    text-align: center;
-}
-
-#eventpage2 h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 32px;
-}
-
-#eventpage img {
-    width: 10%;
-    float: left;
-}
-
-#eventpage h1 {
-    margin-left: 70px;
+.eventpage h1 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: var(--navSize);
+
     text-align: left;
 }
 
-#eventpage p {
-    border-top: 2px dotted black;
-    margin-left: 70px;
-    margin-top: 0;
-    margin-bottom: 0;
+.eventDes {
+
+    border-bottom: 2px dotted black;
+    padding: 2% 0;
+    margin: 2% 0;
     text-align: left;
     font-size: 16px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-device-width: 600px) {}
+
+
+#pastEventsTitle {
+    font-size: var(--navSize-h2);
+}
+
+.eventImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: salmon;
+    height: 30vh;
+    width: 100%;
+}
+
+.eventImg img {
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-device-width: 768px) {
 
-    /* #documentpage2 {
-        margin: 0 10%;
+    .eventContent {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        border-bottom: 2px dotted black;
+        align-items: center;
+    }
 
-    } */
+    .eventDes {
+        flex-grow: 2;
+        width: 50vw;
+        height: 20vh;
+        border: none;
+    }
+
+    .eventImg {
+        flex-grow: 1;
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .eventpage h1 {
+        font-size: var(--bodyMobile-h2);
+    }
+
+    .eventTitlePage {
+        display: flex;
+        gap: 30px;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-device-width: 992px) {
-    #eventpage img {
-        width: 25%;
-        float: left;
-    }
 
-    #eventpage h1 {
-        margin-left: 300px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    #eventpage h3 {
-        margin-left: 300px;
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: left;
-    }
-
-    #eventpage p {
-        border-top: 2px dotted black;
-        margin-left: 300px;
-        margin-top: 0;
-        margin-bottom: 0;
-        text-align: left;
-    }
-
-    #eventpage2 {
-        margin-left: 0;
-        margin-right: 25px;
+    .frame.eventpage {
         padding: 2%;
-        text-align: left;
-        border: 2px #D98283;
-        border-style: dotted;
     }
 
-    #eventpage2 h1 {
+    .lined.eventTitlePage {
+        padding: 0;
+    }
+
+    .eventDes {
+        flex-grow: 3;
+        width: 70vw;
         margin: 0;
-        text-align: left;
+        padding: 0;
+
     }
 
-    #eventpage2 p {
-        text-align: left;
+    .eventImg {
+        flex-grow: 1;
+        width: 20vw;
+
     }
 }
