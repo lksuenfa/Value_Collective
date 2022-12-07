@@ -197,9 +197,6 @@
          font-size: var(--tabletSize-nav);
      }
 
-
-
-
      .overlay a {
          font-size: var(--tabletSize-nav);
          padding: 3%;
@@ -233,8 +230,8 @@
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-device-width: 992px) {
      .body {
-         display: flex;
-         gap: 20px;
+         /* display: flex; */
+         /* gap: 20px; */
      }
 
      #logo,
@@ -243,33 +240,58 @@
 
      }
 
-     nav {
-         margin: 0;
+     .overlay a {
+         font-size: 1rem;
+
      }
+
+     nav {
+         top: 0;
+         left: 0;
+         margin: 0;
+         flex-grow: 1;
+         width: 20vw;
+         position: fixed;
+         height: 100vh;
+
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         padding: 1%;
+
+     }
+
+     .lined,
+     .eventTitle {
+         border-bottom: var(--thickline);
+     }
+
+     .date,
+     .eventname {
+         font-size: 1rem;
+     }
+
+     #page-content {
+         margin-left: 20vw;
+     }
+
 
 
      #navHeader {
          justify-content: center;
          align-items: center;
-         padding: 3% 0 5% 0;
+         padding: 0;
 
      }
 
      .overlay {
          background-color: rgba(0, 0, 0, 0);
-         width: 18vw;
+         width: 100%;
          display: block;
          position: relative;
          overflow: visible;
 
      }
-
-     .overlay,
-     .overlay a {
-         transition: 0s;
-         font-size: 1rem;
-     }
-
 
      #overlayFooter,
      #openBtn,
@@ -280,6 +302,7 @@
 
      #menuMobile {
          justify-content: flex-start;
+         min-height: 33vh;
 
      }
 
@@ -302,7 +325,7 @@
 
      .search-container {
          padding: 1%;
-         margin: 0% 2% 0 3%;
+         margin: 5% 0%;
      }
 
  }

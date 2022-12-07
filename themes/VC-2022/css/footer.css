@@ -114,6 +114,7 @@
   display: flex;
   gap: 20px;
   padding: 5%;
+  align-items: center;
 }
 
 .addressWrapper {
@@ -162,9 +163,9 @@
 
 
   #eventMenu {
-    margin: 5%;
+    margin: 2.5% 0 5% 0;
     border: var(--thickline);
-    width: 96%;
+    width: 100%;
   }
 
 
@@ -178,9 +179,18 @@
 
   #footer,
   #mainMenu {
-    margin: 5%;
+    margin: 2.5% 0 5% 0;
     border: var(--thickline);
-    width: 96%;
+    width: 100%;
+    padding: 0;
+
+  }
+
+  #footer {
+
+    margin: 2.5% 0 5% 0;
+    padding: 1% 2%;
+
   }
 
   .overlay {
@@ -199,7 +209,7 @@
   }
 
   .contactMethod {
-    padding: 5% 0;
+    padding: 1% 0;
     gap: 10px;
   }
 
@@ -207,13 +217,33 @@
     font-size: 0.7rem;
   }
 
-  #contact img {
-    width: 10px;
-    height: auto;
+  #contact img,
+  .documentsTitle img {
+    height: 20px;
+    width: auto;
   }
 
   #contact {
-    padding: 5% 1%;
+    padding: 1%;
+  }
+
+  .imgWide {
+    width: 3vw;
+  }
+
+
+  #contact h3,
+  .locationTitle h3,
+  .documentsTitle h3 {
+    font-size: 1rem;
+  }
+
+  .documentsTitle {
+    padding: 1%;
+  }
+
+  .addressWrapper {
+    font-size: 0.7rem;
   }
 
   .locationTitle img {
