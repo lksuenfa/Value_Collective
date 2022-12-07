@@ -374,3 +374,16 @@ SOFTWARE. */
         margin-top: 180px;
     }
 }
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-device-width: 1900px) {
+    #timeline .demo-card-wrapper {
+        height: 2400px;
+        /* TO BE ADJUSTED ACCODING TO TEXT, HEIGHT FORCES THE WRAPPING INTO 2 COLUMNS*/
+    }
+
+    #timeline .demo-card {
+        width: 30vw;
+    }
+}

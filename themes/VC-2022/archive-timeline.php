@@ -56,10 +56,12 @@
                     <div class="timelinebody content">
                         <?php the_content(); ?>
                     </div>
-
-                    <div class="timelineImg">
-                        <?php the_post_thumbnail(); ?>
+                    <div class="thumbnailWrapper">
+                        <div class="timelineImg">
+                            <?php the_post_thumbnail(); ?>
+                        </div>
                     </div>
+
 
                 </div>
 

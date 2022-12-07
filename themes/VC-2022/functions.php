@@ -38,8 +38,7 @@ function features()
   add_theme_support('post-thumbnails');
 
   // add custom image sizes for cropping
-  add_image_size('team-thumbnail', 250, 300, true);
-  add_image_size('front-page', 400, 400, true);
+  add_image_size('thumbnail', 600, 600, true);
 }
 
 // adjust queries

@@ -22,11 +22,14 @@
             <?php the_content(); ?>
         </div>
 
-        <div id="frontImg">
-            <?php
-            the_post_thumbnail('team-thumbnail');
-            ?>
+        <div class="thumbnailWrapper">
+            <div id="frontImg">
+                <?php
+                the_post_thumbnail('team-thumbnail');
+                ?>
+            </div>
         </div>
+
 
     <?php } ?>
 
@@ -36,7 +39,7 @@
 
 </div>
 
-<section id="s1" class="frame">
+<section id="s1" class="frame slides">
 
     <!-- Full-width images with number and caption text -->
 
@@ -58,10 +61,13 @@
         ?>
 
             <div class="mySlides fade">
-                <!-- <a href="<?php
-                                // the_permalink(); 
-                                ?>"> -->
-                <?php the_post_thumbnail(); ?>
+
+                <div class="thumbnailWrapper">
+                    <div class="sliderImg">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                </div>
+
                 <div class="text">
                     <?php
                     the_title();
@@ -70,7 +76,7 @@
                     ?>
 
                 </div>
-                <!-- </a> -->
+
             </div>
         <?php }; ?>
 
@@ -89,11 +95,11 @@
 
             <div class="mySlides fade">
 
-                <!-- <a href="
-                <?php
-                // the_permalink(); 
-                ?>"> -->
-                <?php the_post_thumbnail(); ?>
+                <div class="thumbnailWrapper">
+                    <div class="sliderImg">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                </div>
                 <div class="text">
                     <?php
                     the_title();
@@ -101,7 +107,7 @@
                     the_excerpt();
                     ?>
                 </div>
-                <!-- </a> -->
+
             </div>
         <?php }; ?>
 
@@ -119,12 +125,11 @@
         ?>
 
             <div class="mySlides fade">
-                <!-- <a href=" -->
-                <?php
-                // the_permalink(); 
-                ?>
-                <!-- "> -->
-                <?php the_post_thumbnail(); ?>
+                <div class="thumbnailWrapper">
+                    <div class="sliderImg">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+                </div>
                 <div class="text">
                     <?php
                     the_title();

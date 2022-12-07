@@ -33,9 +33,9 @@
 }
 
 #frontImg {
-  background-color: #D98283;
+  /* background-color: #D98283; */
   /*------temp--------*/
-  width: 80vw;
+  width: 40vh;
   height: 40vh;
   display: flex;
   align-items: center;

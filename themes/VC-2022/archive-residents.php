@@ -43,8 +43,10 @@
             ?>
 
                 <figure class="product modalBtn">
-                    <div class="product-thumbnail">
-                        <?php the_post_thumbnail('team-thumbnail'); ?>
+                    <div class="thumbnailWrapper">
+                        <div class="product-thumbnail">
+                            <?php the_post_thumbnail('team-thumbnail'); ?>
+                        </div>
                     </div>
 
                     <figcaption>

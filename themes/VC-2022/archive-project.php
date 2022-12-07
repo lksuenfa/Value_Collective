@@ -29,25 +29,28 @@
         ?>
 
             <figure class="product modalBtn">
-                <div class="product-thumbnail">
-                    <?php the_post_thumbnail('team-thumbnail'); ?>
-                </div>
+                <a href="<?php the_permalink(); ?>">
+                    <div class="thumbnailWrapper">
+                        <div class="product-thumbnail">
+                            <?php the_post_thumbnail('team-thumbnail'); ?>
+                        </div>
+                    </div>
 
-                <figcaption>
-                    <h4 class="grid-title">
-                        <?php the_title();
 
+                    <figcaption>
+                        <h4 class="grid-title">
+                            <?php the_title();
+                            ?>
+                        </h4>
 
-                        ?>
-                    </h4>
-
-                    <p class="grid-description">
-                        <?php
-                        if (the_excerpt()) {
-                            echo get_the_excerpt();
-                        }  ?>
-                    </p>
-                </figcaption>
+                        <p class="grid-description">
+                            <?php
+                            if (the_excerpt()) {
+                                echo get_the_excerpt();
+                            }  ?>
+                        </p>
+                    </figcaption>
+                </a>
             </figure>
 
         <?php
@@ -57,7 +60,7 @@
 </section>
 
 <!-- Modal window -->
-<section id="modal-grid" class="modal-grid">
+<!-- <section id="modal-grid" class="modal-grid">
 
     <div class="modal-content">
         <span class="closeModal">
@@ -82,6 +85,6 @@
 
     </div>
 
-</section>
+</section> -->
 
 <?php get_footer(); ?>
