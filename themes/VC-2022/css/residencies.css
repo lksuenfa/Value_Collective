@@ -91,4 +91,9 @@
         padding: 0% 0 1% 0;
     }
 
+
+    .past-residents li {
+        font-size: 1rem;
+    }
+
 }

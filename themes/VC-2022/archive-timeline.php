@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section id="pageDescription">
-    <div id="about" class="frame pageHeader">
+    <div id="about" class="frame pageHeader ">
         <?php
         $args = array(
             'post_type' => 'page',

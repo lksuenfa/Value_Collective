@@ -141,7 +141,7 @@ https://www.w3schools.com/howto/howto_css_modals.asp
     }
 
     .product-grid {
-        margin: 2% 3% 10% 0%;
+        margin: 2% 0;
     }
 
     .modal-content {
@@ -157,6 +157,11 @@ https://www.w3schools.com/howto/howto_css_modals.asp
     .thumbnail-title {
         padding-bottom: 1%;
 
+    }
+
+    .grid-title,
+    .grid-description p {
+        font-size: 1rem;
     }
 
 

@@ -90,19 +90,6 @@ a:visited {
 }
 
 
-
-/* .outer-box-frame {
-    border: 4px solid black;
-    border-radius: 7px;
-    margin: 6px auto;
-  
-    padding: 10px;
-    max-width: 70rem;
-   
-    justify-content: center;
-    text-align: center;
-} */
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-device-width: 768px) {
     body {
@@ -118,13 +105,23 @@ a:visited {
 }
 
 @media only screen and (min-device-width: 992px) {
-    body {
+    .frame.timeline {
+        padding: 0;
+    }
 
-        /* padding: 1%; */
+    .frame {
+        border: var(--thickline);
+    }
+
+    .product-thumbnail {
+        height: 50vh;
 
     }
 
-
+    .frame.pageHeader h1 {
+        font-size: var(--bodyMobile-h1);
+        padding: 1% 0;
+    }
 
 }
 
